@@ -40,7 +40,8 @@ void printStack( stack* s){
     printf("\n\tbottom --> top\n");
     printf("\t[ ");
     while(temp<=s->tos){
-        printf("%c ", s->arr[temp]);
+        if(s->arr[temp]==(char) 13)printf("\n\t");
+        else printf("%c ", s->arr[temp]);
         temp++;
     }
     // printf("]");
